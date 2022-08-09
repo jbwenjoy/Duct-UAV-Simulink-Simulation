@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<SimscapeMultibodyImportXML version="2.0" xmlns="urn:mathworks:SimscapeMultibody:import" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Created by="" on="05/16/22||19:40:34" using="Simscape Multibody Link Version 7.4" from="SolidWorks 29.5.1"/>
+<ModelUnits mass="kilogram" length="millimeter"/>
+<DataUnits mass="kilogram" length="meter"/>
+<RootAssembly name="Assembly" uid="Assembly" version="234">
+<AssemblyFile name="Assembly.SLDASM" type="SolidWorks Assembly"/>
+<InstanceTree>
+<Instance name="Body-1" uid="Body-1" entityUid="Body*:*默认">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0 0 0</Translation>
+</Transform>
+</Instance>
+<Instance name="UpperRotor-1" uid="UpperRotor-1" entityUid="UpperRotor*:*默认">
+<Transform>
+<Rotation>-0.99999999998024824 -1.8266701809655969e-09 -6.2852006885230288e-06 6.2852006885226468e-06 -2.2501406593916602e-10 -0.99999999998024824 1.8266687666709541e-09 -1 2.2502554692340059e-10</Rotation>
+<Translation>4.1311895866550687e-11 0.00010004637524435276 0.022679999999977496</Translation>
+</Transform>
+</Instance>
+<Instance name="LowerRotor-1" uid="LowerRotor-1" entityUid="LowerRotor*:*默认">
+<Transform>
+<Rotation>0.92372802134706666 0 -0.38304900806324144 0.38304900806324155 6.2413877850063229e-13 0.92372802134706655 2.3907573999847035e-13 -1 5.76534478910364e-13</Rotation>
+<Translation>4.6417645467580201e-08 5.8189593853757434e-12 0.071379806613710017</Translation>
+</Transform>
+</Instance>
+<Instance name="Rudder1-1" uid="Rudder1-1" entityUid="Rudder1*:*默认">
+<Transform>
+<Rotation>0.70710678118654646 7.1960916693347232e-14 0.70710678118654879 -0.70710678118654868 4.2146880481215854e-13 0.70710678118654657 -2.4716715334261683e-13 -1 3.492128134473042e-13</Rotation>
+<Translation>-0.0035214554472760154 -0.033414625099659111 0.1324890757858655</Translation>
+</Transform>
+<VisualProperties>
+<Ambient r="1" g="0.16470588235294117" b="0.10588235294117647" a="1"/>
+<Diffuse r="1" g="0.16470588235294117" b="0.10588235294117647" a="1"/>
+<Specular r="0.5" g="0.082352941176470587" b="0.052941176470588235" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Instance>
+<Instance name="Rudder2-1" uid="Rudder2-1" entityUid="Rudder2*:*默认">
+<Transform>
+<Rotation>0.70710678118654657 4.2133714469297753e-13 0.70710678118654857 -0.70710678118654857 7.7075038592755989e-13 0.70710678118654657 -2.4707247231334533e-13 -1 8.4293317666970783e-13</Rotation>
+<Translation>0.035327535143922617 -0.0085381955311670133 0.13175900836748208</Translation>
+</Transform>
+<VisualProperties>
+<Ambient r="0.25490196078431371" g="1" b="0.24705882352941178" a="1"/>
+<Diffuse r="0.25490196078431371" g="1" b="0.24705882352941178" a="1"/>
+<Specular r="0.12745098039215685" g="0.5" b="0.12352941176470589" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Instance>
+</InstanceTree>
+<Constraints>
+<Concentric name="同心1">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Body-1</Uid>
+</InstancePath>
+<Position>6.5058598035217484e-11 0.00010004637816953481 0.035679999999977501</Position>
+<Axis>1.8266708942988083e-09 2.2501412300425994e-10 1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>UpperRotor-1</Uid>
+</InstancePath>
+<Position>0 -0.0272693948604 0</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="重合1">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Body-1</Uid>
+</InstancePath>
+<Position>6.5059397796950018e-11 0.00010000000802861292 0.035679999999977501</Position>
+<Axis>1.8266702413129148e-09 2.2501395937557453e-10 1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>UpperRotor-1</Uid>
+</InstancePath>
+<Position>0 -0.012999999999999994 0</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="同心2">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Body-1</Uid>
+</InstancePath>
+<Position>4.6417609894575805e-08 5.8279372824826564e-12 0.084379806613710015</Position>
+<Axis>4.2158196163062831e-13 4.2158196163062689e-13 -1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>LowerRotor-1</Uid>
+</InstancePath>
+<Position>0 0.0012693948603500066 0</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="重合3">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Body-1</Uid>
+</InstancePath>
+<Position>4.7468977603218362e-11 5.828732141867468e-12 0.084379806613710015</Position>
+<Axis>4.2158196163062831e-13 4.2158196163062689e-13 -1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>LowerRotor-1</Uid>
+</InstancePath>
+<Position>0 -0.012999999999999998 0</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="同心3">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Body-1</Uid>
+</InstancePath>
+<Position>4.7455359086789883e-11 -0.10519999999415297 0.11605980661116568</Position>
+<Axis>1.8318679906315067e-15 1 4.215819616306276e-13</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Rudder1-1</Uid>
+</InstancePath>
+<Position>0.050987228738090411 0.016429269174669844 -0.046007138618149562</Position>
+<Axis>0.70710678118654757 1.1315681846911309e-16 -0.70710678118654746</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="重合5">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Body-1</Uid>
+</InstancePath>
+<Position>4.7455803175999733e-11 0.097700000005775584 0.11605980661375122</Position>
+<Axis>-1.8318679906315067e-15 -1 -4.2170442151794554e-13</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Rudder1-1</Uid>
+</InstancePath>
+<Position>-0.090221995464809496 0.016429269174670011 0.095202085584750365</Position>
+<Axis>-0.70710678118654757 -1.363951489925519e-15 0.70710678118654746</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="同心4">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Body-1</Uid>
+</InstancePath>
+<Position>0.10520000004742047 5.8117816115199616e-12 0.11605980661125438</Position>
+<Axis>-1 1.6098233857064756e-15 -4.215819616306276e-13</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Rudder2-1</Uid>
+</InstancePath>
+<Position>0.041107136088391588 0.015699201756263728 0.053181968014963471</Position>
+<Axis>0.70710678118654757 -1.2235705033344245e-16 0.70710678118654757</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="重合6">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Body-1</Uid>
+</InstancePath>
+<Position>-0.097699999952508082 5.8120383505944062e-12 0.11605980661366884</Position>
+<Axis>1 -1.6098233857064756e-15 4.2145950174330966e-13</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Rudder2-1</Uid>
+</InstancePath>
+<Position>-0.10010208811448827 0.015699201755464048 -0.088027256187956288</Position>
+<Axis>-0.70710678118654768 0 -0.70710678118654746</Axis>
+</ConstraintGeometry>
+</Coincident>
+</Constraints>
+</RootAssembly>
+<Assemblies>
+</Assemblies>
+<Parts>
+<Part name="Body" uid="Body*:*默认" version="281">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Body.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.43073987228648086</Mass>
+<CenterOfMass>-0.0012147476422082238 0.0010980913298483039 0.0687608363489325</CenterOfMass>
+<Inertia>0.0032872786394646078 0.0032872313768172426 0.0049270535847677557 -2.261677347150792e-05 2.4993063408069678e-05 -3.4475883928054546e-07</Inertia>
+</MassProperties>
+<GeometryFile name="Body_默认_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.92549019607843142" g="0.92549019607843142" b="0.92549019607843142" a="1"/>
+<Diffuse r="0.92549019607843142" g="0.92549019607843142" b="0.92549019607843142" a="1"/>
+<Specular r="0.81443137254901965" g="0.81443137254901965" b="0.81443137254901965" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.20999999999999999</Shininess>
+</VisualProperties>
+</Part>
+<Part name="LowerRotor" uid="LowerRotor*:*默认" version="157">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="LowerRotor.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.0097662176004418722</Mass>
+<CenterOfMass>-1.2056488166853197e-06 -0.0064672787641112481 2.5947092634754563e-06</CenterOfMass>
+<Inertia>6.3947973012671792e-06 1.256989812755586e-05 6.3937123739826583e-06 -4.9119201558384077e-11 4.5980061889845213e-10 -4.2945211586072856e-11</Inertia>
+</MassProperties>
+<GeometryFile name="LowerRotor_默认_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.33333333333333331" g="0.33333333333333331" b="0.33333333333333331" a="1"/>
+<Diffuse r="0.33333333333333331" g="0.33333333333333331" b="0.33333333333333331" a="1"/>
+<Specular r="0.29333333333333333" g="0.29333333333333333" b="0.29333333333333333" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.20999999999999999</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Rudder1" uid="Rudder1*:*默认" version="149">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Rudder1.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.01603529353936059</Mass>
+<CenterOfMass>-0.018998608055199248 -0.0011745670962519346 0.023979952464624893</CenterOfMass>
+<Inertia>4.3272966934315258e-05 7.9704262693021261e-05 4.3270226567199319e-05 -1.0682483302137226e-07 3.9824852495696936e-05 1.0673787329155119e-07</Inertia>
+</MassProperties>
+<GeometryFile name="Rudder1_默认_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="1" g="1" b="1" a="1"/>
+<Diffuse r="1" g="1" b="1" a="1"/>
+<Specular r="0.88" g="0.88" b="0.88" a="1"/>
+<Emissive r="0.20999999999999999" g="0.20999999999999999" b="0.20999999999999999" a="1"/>
+<Shininess>0.20999999999999999</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Rudder2" uid="Rudder2*:*默认" version="166">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Rudder2.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.016167110117647165</Mass>
+<CenterOfMass>-0.02890001078477961 -0.001353363090364544 -0.016824408339726569</CenterOfMass>
+<Inertia>4.3489112193115241e-05 7.9741779848715817e-05 4.3490796604781927e-05 1.2878156019594698e-07 -3.9843587944264202e-05 1.2882974112915062e-07</Inertia>
+</MassProperties>
+<GeometryFile name="Rudder2_默认_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.24313725490196078" g="1" b="0.21568627450980393" a="1"/>
+<Diffuse r="0.24313725490196078" g="1" b="0.21568627450980393" a="1"/>
+<Specular r="0.21396078431372548" g="0.88" b="0.18980392156862746" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.20999999999999999</Shininess>
+</VisualProperties>
+</Part>
+<Part name="UpperRotor" uid="UpperRotor*:*默认" version="159">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="UpperRotor.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.0097641660217415004</Mass>
+<CenterOfMass>9.462739335909474e-07 -0.019532958309224819 5.547907565168054e-06</CenterOfMass>
+<Inertia>6.3934638377490574e-06 1.2567936749539979e-05 6.3930083102877933e-06 2.9398974030700297e-11 1.0194806285358998e-09 2.8116235311011038e-11</Inertia>
+</MassProperties>
+<GeometryFile name="UpperRotor_默认_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="1" g="1" b="1" a="1"/>
+<Diffuse r="1" g="1" b="1" a="1"/>
+<Specular r="0.88" g="0.88" b="0.88" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.20999999999999999</Shininess>
+</VisualProperties>
+</Part>
+</Parts>
+</SimscapeMultibodyImportXML>
