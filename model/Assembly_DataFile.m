@@ -146,20 +146,20 @@ smiData.Solid(3).ID = 'LowerRotor*:*默认';
 
 %Inertia Type - Custom
 %Visual Properties - Simple
-smiData.Solid(4).mass = 0.01603529353936059;  % kg
+smiData.Solid(4).mass = 0.001603529353936059;  % kg
 smiData.Solid(4).CoM = [-18.998608055199249 -1.1745670962519346 23.979952464624894];  % mm
-smiData.Solid(4).MoI = [43.272966934315257 79.704262693021263 43.270226567199316];  % kg*mm^2
-smiData.Solid(4).PoI = [-0.10682483302137226 39.824852495696938 0.1067378732915512];  % kg*mm^2
+smiData.Solid(4).MoI = [4.3272966934315257 7.9704262693021263 4.3270226567199316];  % kg*mm^2
+smiData.Solid(4).PoI = [-0.010682483302137226 3.9824852495696938 0.01067378732915512];  % kg*mm^2
 smiData.Solid(4).color = [1 1 1];
 smiData.Solid(4).opacity = 1;
 smiData.Solid(4).ID = 'Rudder1*:*默认';
 
 %Inertia Type - Custom
 %Visual Properties - Simple
-smiData.Solid(5).mass = 0.016167110117647165;  % kg
+smiData.Solid(5).mass = 0.0016167110117647165;  % kg
 smiData.Solid(5).CoM = [-28.90001078477961 -1.3533630903645439 -16.82440833972657];  % mm
-smiData.Solid(5).MoI = [43.48911219311524 79.741779848715822 43.490796604781927];  % kg*mm^2
-smiData.Solid(5).PoI = [0.12878156019594697 -39.8435879442642 0.1288297411291506];  % kg*mm^2
+smiData.Solid(5).MoI = [4.348911219311524 7.9741779848715822 4.3490796604781927];  % kg*mm^2
+smiData.Solid(5).PoI = [0.012878156019594697 -3.98435879442642 0.01288297411291506];  % kg*mm^2
 smiData.Solid(5).color = [0.24313725490196078 1 0.21568627450980393];
 smiData.Solid(5).opacity = 1;
 smiData.Solid(5).ID = 'Rudder2*:*默认';
